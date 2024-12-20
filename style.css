@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* line-height: 1.6; */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+
+}
+header nav:hover {
+    background-color: #333;
+    color: gray;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main_container {
+    text-align: center;
+    padding: 10rem;
+    background: #f4f4f4;
+}
+
+.main_container .h1 {
+    font-size: 5rem;
+    /* margin-top: 5rem; */
+
+}
+.main_container .p{
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+
+.main_container .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.products .product {
+    text-align: center;
+    margin: 1rem;
+    width: 200px;
+
+}
+
+.products .product img {
+    max-width: 150px;
+    max-height: 150px; 
+    margin: 0 auto; 
+    display: block;
+
+}
+
+.products .product h3 {
+    margin: 0.5rem 0;
+}
+
+.products .product p {
+    color: #333;
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_container h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 1.2rem;
+    }
+
+    .main_container h1 {
+        font-size: 1.2rem;
+    }
+
+    .main_container p {
+        font-size: 0.9rem;
+    }
+}
